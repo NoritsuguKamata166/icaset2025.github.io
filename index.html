@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ICASET 2025 - International Conference</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f5f5f5; color: #333; margin: 0; padding: 0; }
+    header, footer { background: #004080; color: white; padding: 1rem 2rem; text-align: center; }
+    section { max-width: 1000px; margin: auto; padding: 2rem; background: white; }
+    h1, h2 { color: #004080; }
+    .lang-buttons { text-align: right; margin-bottom: 1rem; }
+    .lang-buttons button { margin-left: 0.5rem; padding: 0.4rem 1rem; }
+    .important-dates, .contact { background: #e8f0fe; padding: 1rem; margin-top: 1rem; border-left: 4px solid #004080; }
+    .hidden { display: none; }
+    a { color: #004080; }
+    iframe { width: 100%; height: 600px; border: none; margin-top: 1rem; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>ICASET 2025</h1>
+  <p>International Conference on Applied Science and Education Technology</p>
+  <p>📅 4th – 6th September 2025 | 📍 UMK Putrajaya, Malaysia</p>
+  <p><a href="http://www.icaset2025.com" style="color:white;">🌐 www.icaset2025.com</a></p>
+</header>
+
+<section>
+  <div class="lang-buttons">
+    <button onclick="setLang('en')">English</button>
+    <button onclick="setLang('jp')">日本語</button>
+  </div>
+
+  <!-- English Content -->
+  <div id="content-en">
+    <h2>📢 Call for Papers</h2>
+    <p>We invite submissions for ICASET 2025, a premier platform for researchers in Applied Science and Education Technology.</p>
+
+    <h2>📝 Submission Guidelines</h2>
+    <ul>
+      <li>Original papers only (not under review elsewhere)</li>
+      <li>Format: <strong><a href="https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines" target="_blank">Springer Template</a></strong></li>
+      <li>Length: 6–8 pages</li>
+      <li>Submit via Google Form or email: <a href="mailto:n.kamata@dendai.ac.jp">n.kamata@dendai.ac.jp</a></li>
+    </ul>
+
+    <h2>📤 Online Submission</h2>
+    <p>Please submit your abstract or paper using the following form:</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-example-form-link/viewform?embedded=true" loading="lazy">Loading…</iframe>
+
+    <h2>🏆 Publication</h2>
+    <p>Accepted papers will be published in the Malaysian Journal of Bioengineering and Technology (MJBET).</p>
+
+    <div class="important-dates">
+      <h2>📅 Important Dates</h2>
+      <ul>
+        <li>Abstract Deadline: 30 June 2025</li>
+        <li>Full Paper Deadline: 31 August 2025</li>
+        <li>Payment Deadline: 30 June 2025</li>
+        <li>Conference Dates: 4–6 September 2025</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>📬 Contact</h2>
+      <p>Mr. Noritsugu Kamata (鎌田憲嗣)<br>Email: <a href="mailto:n.kamata@dendai.ac.jp">n.kamata@dendai.ac.jp</a></p>
+    </div>
+  </div>
+
+  <!-- Japanese Content -->
+  <div id="content-jp" class="hidden">
+    <h2>📢 論文募集</h2>
+    <p>ICASET 2025では、応用科学および教育技術分野に関する研究発表を募集しています。</p>
+
+    <h2>📝 投稿ガイドライン</h2>
+    <ul>
+      <li>未発表で他誌に投稿中でないこと</li>
+      <li>フォーマット：<strong><a href="https://www.springer.com/gp/authors-editors/conference-proceedings/conference-proceedings-guidelines" target="_blank">Springerテンプレート</a></strong></li>
+      <li>ページ数：6～8ページ</li>
+      <li>提出方法：GoogleフォームまたはEメール（<a href="mailto:n.kamata@dendai.ac.jp">n.kamata@dendai.ac.jp</a>）</li>
+    </ul>
+
+    <h2>📤 オンライン提出</h2>
+    <p>以下のフォームから提出してください：</p>
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe-example-form-link/viewform?embedded=true" loading="lazy">読み込み中…</iframe>
+
+    <h2>🏆 掲載・出版</h2>
+    <p>採択された論文は、Malaysian Journal of Bioengineering and Technology (MJBET) に掲載されます。</p>
+
+    <div class="important-dates">
+      <h2>📅 重要日程</h2>
+      <ul>
+        <li>要旨提出締切：2025年6月30日</li>
+        <li>論文提出締切：2025年8月31日</li>
+        <li>支払締切：2025年6月30日</li>
+        <li>開催日：2025年9月4日～6日</li>
+      </ul>
+    </div>
+
+    <div class="contact">
+      <h2>📬 お問い合わせ</h2>
+      <p>鎌田憲嗣（Mr. Noritsugu Kamata）<br>Email: <a href="mailto:n.kamata@dendai.ac.jp">n.kamata@dendai.ac.jp</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>&copy; 2025 ICASET. All Rights Reserved.</p>
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.getElementById("content-en").classList.toggle("hidden", lang !== "en");
+    document.getElementById("content-jp").classList.toggle("hidden", lang !== "jp");
+  }
+</script>
+
+</body>
+</html>
